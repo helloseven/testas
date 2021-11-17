@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+h2, h3 {
+    color: rgb(235, 147, 31);
+}
+header{
+    background: rgb(124, 13, 134);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    padding: 10px;
+}
+.logo img {
+    width: 100px;
+}
+
+.searchBar {
+    padding: 10px;
+}
+.searchBar i {
+    position: absolute;
+    margin: 5px;
+}
+
+.search {
+    padding-left: 25px;
+}
+
+.hero {
+    position: relative;
+    background: url(https://image.freepik.com/free-photo/caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_155003-32526.jpg) no-repeat center center/cover;
+    min-height: 500px;
+    text-align: center;
+    z-index: 1;
+}
+
+.hero h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.content {
+    position: relative;
+    text-align: center;
+    padding: 20px 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.content img {
+    border-radius: 50%;
+}
+
+.top-images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-images img {
+    min-width: 50px;
+}
+
+bottom-images {
+    display: flex;
+    flex-direction: column;
+}
+.bottom-images img  {
+    width: 200px;
+}
+
+.bottom-images span {
+    display: block;
+}
+
+.bottom-image-1, .bottom-image-2 {
+    margin: 2rem;
+}
+
+footer {
+    background: rgb(124, 13, 134);
+    border-top: 15px solid rgb(235, 147, 31);
+    text-align: center;
+    padding: 1rem;
+}
+
+footer ul {
+    color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and ( min-width: 645px ) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .content {
+        width: 70%;
+        margin-top: -100px;
+        z-index: 2;
+    }
+
+    .bottom-images {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .bottom-images img {
+        width: 100px;
+    }
+
+    .bottom-image-1, .bottom-image-2 {
+        display: flex;
+        align-items: center;
+        width: 50%;
+        gap: 10px;
+        margin: 1.25rem 0;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+}
